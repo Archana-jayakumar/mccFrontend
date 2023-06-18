@@ -1,28 +1,29 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from 'react-router-dom';
+import axios from '../api/axios'
 import './Review.css';
 
 function ReviewForm() {
-  const [name, setName] = useState("");
+  const [studentName, setStudentName] = useState("");
   const [branch, setBranch] = useState("");
-  const [salary, setSalary] = useState("");
-  const [review, setReview] = useState("");
-  const [company, setCompany] = useState("");
+ // const [salary, setSalary] = useState("");
+  const [reviewText, setReviewText] = useState("");
+  const [companyName, setCompanyName] = useState("");
+  const [errmsg,setErrmsg] =useState("")
 
   const history = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
-    // handle form submission
-    console.log(name, branch, salary, review);
-    // reset form fields
-    setName("");
-    setBranch("");
-    setSalary("");
-    setReview("");
-    setCompany("");
-    // Redirect to '/review' after form submission
-    history.push("/review");
+    try{
+        const Review = {studentName,branch,reviewText,companyName}
+        const response=await axios.post('/reviews',Review)
+        // history.push("/review");
+        console.log(response.data)
+        setErrmsg("")
+    }catch(error){
+      setErrmsg("error occured")
+    }
   };
 
   return (
@@ -55,12 +56,13 @@ function ReviewForm() {
       </div>
       <h1 className="review">Review Form</h1>
       <form className=" reviewform"onSubmit={handleSubmit}>
+        <p>{errmsg}</p>
         <label className="label">
           Name:
           <input
             type="texts"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={studentName}
+            onChange={(e) => setStudentName(e.target.value)}
           />
         </label>
         <label  className="label">
@@ -75,26 +77,26 @@ function ReviewForm() {
           Company:
           <input
             type="texts"
-            value={company}
-            onChange={(e) => setCompany(e.target.value)}
+            value={companyName}
+            onChange={(e) => setCompanyName(e.target.value)}
           />
         </label>
-        <label className="label">
+        {/* <label className="label">
           Salary Package:
           <input
             type="texts"
             value={salary}
             onChange={(e) => setSalary(e.target.value)}
           />
-        </label>
+        </label> */}
         <label  className="label">
           Review:
           <textarea
-            value={review}
-            onChange={(e) => setReview(e.target.value)}
+            value={reviewText}
+            onChange={(e) => setReviewText(e.target.value)}
           />
         </label>
-        <button type="submit">Submit</button>
+        <button>Submit</button>
       </form>
     </div>
   );

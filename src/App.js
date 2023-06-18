@@ -13,20 +13,24 @@ import Review from './pages/Review';
 import Cocubes from './pages/Cocubes';
 import Amcat from "./pages/Amcat";
 import Display from "./pages/Display";
+import { useState } from "react";
 
 
 function App() {
+
+  const [auth,setAuth]= useState({})
+
   return (
     <BrowserRouter>
       {/* <Navbar /> */}
       <Routes>
-      <Route path="/" element={<Login/>}/>
+      <Route path="/" element={<Login auth={auth} setAuth={setAuth} />}/>
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About/>} />
         <Route path="/Company" element={<Company/>}/>
        <Route path="/analyser" element={<Analyser/>}/>
         <Route path="/SignUp" element={<SignUp />} />
-       <Route path="/review" element={<Review />}/>
+       <Route path="/review" element={<Review auth={auth}/>}/>
        <Route path="/Cocubes" element={<Cocubes />}/>
        <Route path="/Amcat" element={<Amcat />}/>
        <Route path="/Display" element={<Display />}/>
