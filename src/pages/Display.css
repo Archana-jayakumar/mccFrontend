@@ -1,0 +1,75 @@
+.response-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#7a9d96;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 2100px;
+    overflow-y: auto;
+    width: 2100px;
+   
+  }
+  .headings{
+    color: rgb(0, 0, 0);
+    margin-left:20px;
+    font-size: 50px;
+    font-style: oblique;
+    font-family:  Sans,Noto Sans Japanese,Arial,Helvetica,sans-serif;
+  }
+  .response-box {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 15px;
+    /* margin-top:100px; */
+    margin-bottom: 46px;
+    width: 900px;
+    
+  }
+  
+  .response-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .name {
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+    font-family:  Sans,Noto Sans Japanese,Arial,Helvetica,sans-serif;
+  }
+  
+  .company {
+    margin: 0;
+    font-size: 17px;
+    color: #666;
+    font-style: italic;
+    font-family:  Sans,Noto Sans Japanese,Arial,Helvetica,sans-serif;
+  }
+  
+  .description {
+    margin-top: 8px;
+    font-size: 20px;
+    font-family:  Sans,Noto Sans Japanese,Arial,Helvetica,sans-serif;
+  }
+  
+  /* reviewdisplay.css */
+
+.filter-container {
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    font-size:17px;
+    
+    font-family:  Sans,Noto Sans Japanese,Arial,Helvetica,sans-serif;
+  }
+  
+  .filter-container label {
+    margin-right: 20px;
+  }
+  
+  .filter-container select {
+    padding: 10px;
+    font-size: 17px;
+    font-family:  Sans,Noto Sans Japanese,Arial,Helvetica,sans-serif;
+  }
+  

@@ -1,0 +1,57 @@
+.contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.black-text {
+  color: black;
+}
+
+.amcat {
+  font-size: 80px;
+  margin-bottom: 20px;
+  margin-right: 500px;
+}
+
+.labell {
+  font-size: 25px;
+  margin-bottom: 5px;
+  margin-top: 50px;
+  margin-right: 300px;
+}
+
+.inputt {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 500px;
+  height: 50px;
+  
+}
+
+.amb {
+  padding: 10px 20px;
+  background-color: #00303f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.amb:hover {
+  background-color: #5e658a;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.chart-container {
+  margin-top: 20px;
+}
+
+.chart {
+  max-width: 400px;
+  margin-bottom: 10px;
+}

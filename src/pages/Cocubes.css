@@ -1,0 +1,55 @@
+.containerr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.cocubes {
+  font-size: 54px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 500px;
+  color: black;
+}
+
+.labe {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: black;
+  font-weight: 500 ;
+}
+
+.inputs {
+  padding: 20px;
+  margin-bottom: 10px;
+  width: 400px;
+  height: 10px;
+}
+
+.but {
+  padding: 10px 20px;
+  background-color: #00303f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.but:hover {
+  background-color: #5b708e;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.chart-container {
+  margin-top: 20px;
+}
+
+.chart {
+  max-width: 400px;
+  margin-bottom: 10px;
+}

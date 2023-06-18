@@ -1,0 +1,97 @@
+.about {
+  background-color: #0d0e0d2b;
+  padding: 20px;
+  margin: 200px;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.ab {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 70px;
+  margin-right: 500px;
+  
+  color: rgb(0, 0, 0);
+}
+
+.about p {
+  margin-bottom: 20px;
+}
+
+.about a {
+  color: #376399;
+  text-decoration: none;
+}
+
+.about a:hover {
+  text-decoration: underline;
+}
+
+.AB {
+  background-color:#7a9d96;
+  color: white;
+  overflow: hidden;
+}
+
+.P {
+  display: block;
+  margin-block-start: 16px;
+  margin-block-end: 16px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: rgba(193, 193, 193, 0.263);
+  padding: 100px;
+  text-align: left;
+  color: black;
+}
+
+.contact-details {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.contact-details h2 {
+  font-size: 50px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.contact-details p {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #000000;
+  font-size: 30px;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}
+
+.K {
+  font-size: 25px;
+   margin-left: 830px;
+}

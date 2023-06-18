@@ -1,0 +1,79 @@
+.reviewform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfcfcd8;
+  border-radius: 10px;
+  padding: 20px;
+  width: 1200px;
+  height: 1000px;
+  margin-top: 5px;
+  margin-left: 400px;
+  color: rgb(0, 0, 0);
+}
+
+.review {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 50px;
+  text-align: center;
+  margin-right: 500px;
+}
+
+.label {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  align-items: left; /* Align labels to the left */
+  margin-left: 180px;
+  padding: 10px;
+  font-weight: 500;
+}
+
+input[type="texts"],
+textarea {
+  background-color: #8d6e6e4e;
+  width: 80%;
+ 
+  height: 30px;
+
+  padding: 10px;
+  border: 1px solid #010101;
+  border-radius: 1px;
+  font-family: cursive;
+  font-size: 20px;
+  border-color: #000000;
+ /* Adjust the margin as needed */
+  align-self: flex-start; /* Align textarea to the center */
+  margin-right: 1300px;
+  margin-left: 50px;
+}
+
+textarea {
+  height: 200px; /* Increase the height as needed */
+  width: 80%; /* Adjust the width as needed */
+ 
+  
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #00303f;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 10px;
+  width: 150px;
+  height: 50px;
+}
+
+button[type="submit"]:hover {
+  background-color: #222528;
+  cursor: pointer;
+}
